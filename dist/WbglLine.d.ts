@@ -50,7 +50,7 @@ export declare class WebglLine extends WebglBaseLine {
      * line.lineSpaceX(-1, 2 / numX);
      * ```
      */
-    insertXValues(data: Float32Array): void;
+    insertXValuesNormalized(data: Float32Array): void;
     /**
      * Set a constant value for all Y values in the line
      * @param c - constant value

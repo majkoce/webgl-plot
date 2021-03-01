@@ -95,9 +95,9 @@ class WebglLine extends WebglBaseLine {
      * line.lineSpaceX(-1, 2 / numX);
      * ```
      */
-    insertXValues(data) {
+    insertXValuesNormalized(data) {
         for (let i = 0; i < this.numPoints; i++) {
-            this.setX(i, data[i]);
+            this.setX(i, data[i] - data[0]);
         }
     }
     /**
