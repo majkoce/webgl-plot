@@ -233,7 +233,7 @@ export default class WebGLPlot {
     }
     log(str) {
         if (this.debug) {
-            console.log("[webgl-plot]:" + str);
+            console.log("[majko-plot]:" + str);
         }
     }
 }

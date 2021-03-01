@@ -350,7 +350,7 @@ export default class WebGLPlot {
 
   private log(str: string): void {
     if (this.debug) {
-      console.log("[webgl-plot]:" + str);
+      console.log("[majko-plot]:" + str);
     }
   }
 }

@@ -134,7 +134,7 @@ export default class WebGLPlot {
      */
     private _addLine;
     addDataLine(line: WebglLine | WebglStep | WebglPolar): void;
-    addLine: (line: WebglLine | WebglStep | WebglPolar) => void;
+    addLine: (line: WebglLine | WebglPolar | WebglStep) => void;
     addAuxLine(line: WebglLine | WebglStep | WebglPolar): void;
     private initThinLineProgram;
     /**
