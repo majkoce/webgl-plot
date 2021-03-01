@@ -128,12 +128,8 @@
          * ```
          */
         shiftAdd(data) {
-            const shiftSize = data.length;
-            for (let i = 0; i < this.numPoints - shiftSize; i++) {
-                this.setY(i, this.getY(i + shiftSize));
-            }
-            for (let i = 0; i < shiftSize; i++) {
-                this.setY(i + this.numPoints - shiftSize, data[i]);
+            for (let i = 0; i < this.numPoints; i++) {
+                this.setY(i, data[i]);
             }
         }
     }
@@ -508,7 +504,7 @@
         }
         log(str) {
             if (this.debug) {
-                console.log("[webgl-plot]:" + str);
+                console.log("[majko-plot]:" + str);
             }
         }
     }

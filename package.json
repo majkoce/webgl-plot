@@ -1,6 +1,6 @@
 {
   "name": "webgl-plot2",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "High-performance 2D plotting library based on native WebGL",
   "main": "./dist/webglplot.umd.js",
   "exports": "./dist/webglplot.esm.js",
@@ -28,5 +28,7 @@
     "url": "https://github.com/danchitnis/webgl-plot/issues"
   },
   "homepage": "https://github.com/danchitnis/webgl-plot",
-  "dependencies": {}
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
