@@ -50,14 +50,14 @@ export declare class WebglLine extends WebglBaseLine {
      * line.lineSpaceX(-1, 2 / numX);
      * ```
      */
-    lineSpaceX(start: number, stepSize: number): void;
+    insertXValues(data: Float32Array): void;
     /**
      * Set a constant value for all Y values in the line
      * @param c - constant value
      */
     constY(c: number): void;
     /**
-     * Add a new Y values to the end of current array and shift it, so that the total number of the pair remains the same
+     * Add  Y values current array
      * @param data - the Y array
      *
      * @example
@@ -66,6 +66,6 @@ export declare class WebglLine extends WebglBaseLine {
      * line.shiftAdd(yArray);
      * ```
      */
-    shiftAdd(data: Float32Array): void;
+    insertYValues(data: Float32Array): void;
 }
 //# sourceMappingURL=WbglLine.d.ts.map

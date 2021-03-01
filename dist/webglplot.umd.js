@@ -101,10 +101,9 @@
          * line.lineSpaceX(-1, 2 / numX);
          * ```
          */
-        lineSpaceX(start, stepSize) {
+        insertXValues(data) {
             for (let i = 0; i < this.numPoints; i++) {
-                // set x to -num/2:1:+num/2
-                this.setX(i, start + stepSize * i);
+                this.setX(i, data[i]);
             }
         }
         /**
@@ -118,7 +117,7 @@
             }
         }
         /**
-         * Add a new Y values to the end of current array and shift it, so that the total number of the pair remains the same
+         * Add  Y values current array
          * @param data - the Y array
          *
          * @example
@@ -127,7 +126,7 @@
          * line.shiftAdd(yArray);
          * ```
          */
-        shiftAdd(data) {
+        insertYValues(data) {
             for (let i = 0; i < this.numPoints; i++) {
                 this.setY(i, data[i]);
             }
