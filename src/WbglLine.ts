@@ -71,9 +71,9 @@ export class WebglLine extends WebglBaseLine {
    * line.lineSpaceX(-1, 2 / numX);
    * ```
    */
-  public insertXValues(data: Float32Array): void {
+  public insertXValuesNormalized(data: Float32Array): void {
     for (let i = 0; i < this.numPoints; i++) {
-      this.setX(i, data[i]);
+      this.setX(i, data[i] - data[0]);
     }
   }
 
