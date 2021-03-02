@@ -95,9 +95,10 @@ class WebglLine extends WebglBaseLine {
      * line.lineSpaceX(-1, 2 / numX);
      * ```
      */
-    insertXValuesNormalized(data) {
+    insertValues(dataX, dataY) {
         for (let i = 0; i < this.numPoints; i++) {
-            this.setX(i, data[i] - data[0]);
+            this.setX(i, dataX[i] - dataX[0]);
+            this.setY(i, dataY[i]);
         }
     }
     /**
@@ -108,21 +109,6 @@ class WebglLine extends WebglBaseLine {
         for (let i = 0; i < this.numPoints; i++) {
             // set x to -num/2:1:+num/2
             this.setY(i, c);
-        }
-    }
-    /**
-     * Add  Y values current array
-     * @param data - the Y array
-     *
-     * @example
-     * ```typescript
-     * yArray = new Float32Array([3, 4, 5]);
-     * line.shiftAdd(yArray);
-     * ```
-     */
-    insertYValues(data) {
-        for (let i = 0; i < this.numPoints; i++) {
-            this.setY(i, data[i]);
         }
     }
 }

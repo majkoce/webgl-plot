@@ -50,22 +50,11 @@ export declare class WebglLine extends WebglBaseLine {
      * line.lineSpaceX(-1, 2 / numX);
      * ```
      */
-    insertXValuesNormalized(data: Float32Array): void;
+    insertValues(dataX: Float32Array, dataY: Float32Array): void;
     /**
      * Set a constant value for all Y values in the line
      * @param c - constant value
      */
     constY(c: number): void;
-    /**
-     * Add  Y values current array
-     * @param data - the Y array
-     *
-     * @example
-     * ```typescript
-     * yArray = new Float32Array([3, 4, 5]);
-     * line.shiftAdd(yArray);
-     * ```
-     */
-    insertYValues(data: Float32Array): void;
 }
 //# sourceMappingURL=WbglLine.d.ts.map
